@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>Laba_2</title>
+    <link rel="stylesheet" type="text/css"
+          href="http://yegor256.github.io/tacit/tacit.min.css"/>
+</head>
+
+<body>
+<form action="#res">
+    <br>
+    a: <input type="number" id="a" required="required">
+    b: <input type="number" id="b" required="required" autocomplete="off">
+    c: <input type="number" id="c" required="required">
+    <button id="calcbutten">ClickMe</button>
+    <br>
+    Result: <span id="res"></span>
+</form>
+
+
+<script>
+    let aInp = document.getElementById('a');
+    let bInp = document.getElementById('b');
+    let cInp = document.getElementById('c');
+    let res = document.getElementById('res');
+    function calculate() {
+        let a = parseInt(aInp.value);
+        let b = parseInt(bInp.value);
+        let c = parseInt(cInp.value);
+        res.innerText = b * b - 4 * a * c;
+        if (isNaN(res.innerText)) {
+            res.innerText = '';
+        }
+    }
+    document.getElementById('calcbutten').onclick = calculate;
+
+</script>
+</body>
+</html>
