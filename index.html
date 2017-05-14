@@ -8,13 +8,12 @@
 
 <body>
 <form action="#res">
-    <br>
-    a: <input type="number" id="a" required="required">
-    b: <input type="number" id="b" required="required" autocomplete="off">
-    c: <input type="number" id="c" required="required">
-    <button id="calcbutten">ClickMe</button>
-    <br>
-    Result: <span id="res"></span>
+    <img src="http://xreferat.com/image/33/1305938926_25.gif" alt="">
+    <div><input type="number" id="a" placeholder="a" required="required"></div>
+    <div><input type="number" id="b" placeholder="b" required="required" autocomplete="off"></div>
+    <div><input type="number" id="c" placeholder="c" required="required"></div>
+    <div><button id="calcbutten">ClickMe</button></div>
+    Result: <b id="res"></b>
 </form>
 
 
@@ -35,5 +34,27 @@
     document.getElementById('calcbutten').onclick = calculate;
 
 </script>
+<style>
+    body {
+        background-image: url("https://images3.alphacoders.com/240/240055.jpg");
+        background-size: cover;
+    }
+
+    form{
+        width: 300px;
+        margin: 150px auto 0;
+        background-color: #fff;
+        padding: 20px 30px;
+        border-radius: 15px;
+        opacity: 0.93;
+    }
+    button{
+        width: 100%;
+        border-radius: 10px;
+        font-weight: bold;
+        background-color: rgba(3, 0, 0, 0.21);
+        color: #000
+    }
+</style>
 </body>
 </html>
