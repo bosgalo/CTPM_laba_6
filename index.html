@@ -2,8 +2,8 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <title>Laba_2</title>
-    <link rel="stylesheet" type="text/css"
-          href="http://yegor256.github.io/tacit/tacit.min.css"/>
+    <link rel="stylesheet" type="text/css" href="http://yegor256.github.io/tacit/tacit.min.css"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 
 <body>
@@ -15,46 +15,6 @@
     <div><button id="calcbutten">ClickMe</button></div>
     Result: <b id="res"></b>
 </form>
-
-
-<script>
-    let aInp = document.getElementById('a');
-    let bInp = document.getElementById('b');
-    let cInp = document.getElementById('c');
-    let res = document.getElementById('res');
-    function calculate() {
-        let a = parseInt(aInp.value);
-        let b = parseInt(bInp.value);
-        let c = parseInt(cInp.value);
-        res.innerText = b * b - 4 * a * c;
-        if (isNaN(res.innerText)) {
-            res.innerText = '';
-        }
-    }
-    document.getElementById('calcbutten').onclick = calculate;
-
-</script>
-<style>
-    body {
-        background-image: url("https://images3.alphacoders.com/240/240055.jpg");
-        background-size: cover;
-    }
-
-    form{
-        width: 300px;
-        margin: 150px auto 0;
-        background-color: #fff;
-        padding: 20px 30px;
-        border-radius: 15px;
-        opacity: 0.93;
-    }
-    button{
-        width: 100%;
-        border-radius: 10px;
-        font-weight: bold;
-        background-color: rgba(3, 0, 0, 0.21);
-        color: #000
-    }
-</style>
+<script src="logic.js"></script>
 </body>
 </html>
